@@ -35,4 +35,4 @@ I'm always open to discussing new opportunities and interesting projects.
 - **GitHub:** [prashantpurwar12](https://github.com/prashantpurwar12)
 
 ---
-&copy; 2024 Prashant Purwar. All rights reserved.
+&copy; 2025 Prashant Purwar. All rights reserved.
