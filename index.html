@@ -4,14 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prashant Purwar - Software Developer</title>
-    <meta name="description"
-        content="Prashant Purwar - Software Engineer specializing in Java, React, Node.js, and modern web technologies">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Prashant Purwar - Portfolio</title>
+    <meta name="description" content="Prashant Purwar - Full Stack Developer specializing in Java, Spring Boot, MERN stack, and AI engineering.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    
+    <!-- External Icon Library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,42 +19,41 @@
         <div class="scroll-progress-bar" id="scrollProgressBar"></div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
+            <a href="#" class="brand-logo">Prashant</a>
+            
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
+            
             <div class="nav-overlay" id="nav-overlay"></div>
+            
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link active">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#specializations" class="nav-link">Specializations</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#timeline" class="nav-link">Journey</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#certifications" class="nav-link">Certifications</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#achievements" class="nav-link">Achievements</a>
+                    <a href="#projects" class="nav-link">Works</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+            
             <div class="nav-quick-links">
-                <a href="#home" class="quick-link">Home</a>
-                <a href="#projects" class="quick-link">Projects</a>
-                <a href="#contact" class="quick-link btn-contact">Contact</a>
+                <a href="#contact" class="quick-link btn-contact">
+                    <i class="fas fa-envelope"></i> Say Hi
+                </a>
             </div>
         </div>
     </nav>
@@ -67,78 +63,71 @@
         <div class="hero-background">
             <div class="floating-shape shape-1"></div>
             <div class="floating-shape shape-2"></div>
-            <div class="floating-shape shape-3"></div>
         </div>
-        <div class="hero-container">
+        <div class="container hero-container">
             <div class="hero-content">
+                
+                <!-- Left Column: Title & Stats -->
                 <div class="hero-text">
                     <div class="hero-badge">
                         <span class="badge-dot"></span>
-                        <span>Available for opportunities</span>
+                        <span>Full Stack Developer</span>
                     </div>
                     <h1 class="hero-title">
-                        <span class="greeting">Hello, I'm</span>
-                        <span class="name-wrapper">
-                            <span class="highlight-name">Prashant Purwar</span>
-                        </span>
+                        <span class="greeting">Hey There,</span>
+                        <span class="highlight-name">I'm Prashant</span>
                     </h1>
-                    <div class="hero-subtitle-wrapper">
-                        <p class="hero-subtitle">
-                            <span class="typing-text">Software Engineer</span>
-                        </p>
+                    
+                    <a href="mailto:work.prashantpurwar@gmail.com" class="hero-email">
+                        work.prashantpurwar@gmail.com
+                    </a>
+                    
+                    <div class="hero-stat-box">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Years of Coding<br>Experience</span>
                     </div>
-                    <p class="hero-description">
-                        I have strong Java problem-solving skills, with experience in applying data structures and
-                        algorithms to build efficient and scalable applications. I also create innovative web solutions
-                        using React, Node.js, and Database Management, and I am currently pursuing B.Tech in Information
-                        Technology at
-                        Noida Institute of Engineering and Technology.
+                </div>
+                
+                <!-- Center Column: Portrait Coder & SVG Brush Backdrop -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-brush-stroke">
+                        <!-- Custom Organic Brush Splash SVG -->
+                        <svg viewBox="0 0 500 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M150,80 Q250,30 380,90 T430,280 Q440,380 340,430 T160,390 Q60,350 80,220 Z" fill="#234F46" opacity="0.8" />
+                            <path d="M220,100 C300,50 420,120 400,240 C380,360 280,450 160,400 C40,350 140,150 220,100 Z" fill="#2D5A50" opacity="0.85" />
+                        </svg>
+                    </div>
+                    <div class="portrait-container">
+                        <!-- High-Fidelity Custom Image Asset serving the designer beanie sweatshirt photo -->
+                        <img src="developer_portrait.jpg" alt="Prashant Purwar" class="portrait-img">
+                    </div>
+                </div>
+                
+                <!-- Right Column: Subtitle & Rotating Stamp Badge -->
+                <div class="hero-right-col">
+                    <p class="hero-side-desc">
+                        I design beautifully simple systems, and I love what I do.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>View My Work</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <span>Get In Touch</span>
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/prashantpurwar12" target="_blank" class="social-link"
-                            aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/prashant-purwar-230966264/" target="_blank"
-                            class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:work.prashantpurwar@gmail.com" class="social-link" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <div class="image-placeholder">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="floating-card card-1">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Web Development</span>
-                        </div>
-                        <div class="floating-card card-2">
-                            <i class="fas fa-brain"></i>
-                            <span>AI/ML</span>
-                        </div>
-                        <div class="floating-card card-3">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>Responsive Design</span>
+                    
+                    <!-- Circular Rotating Seal Stamp Badge -->
+                    <div class="stamp-badge-wrapper">
+                        <svg viewBox="0 0 100 100" class="stamp-badge-svg">
+                            <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
+                            <text font-size="6.2" font-weight="800" fill="#0C1620" letter-spacing="0.08em">
+                                <textPath href="#circlePath">
+                                    • B.TECH GRADUATE • NIET INFORMATION TECHNOLOGY 
+                                </textPath>
+                            </text>
+                        </svg>
+                        <div class="stamp-badge-center">
+                            <i class="fas fa-terminal"></i>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
+        
         <div class="scroll-indicator">
             <span>Scroll Down</span>
             <i class="fas fa-chevron-down"></i>
@@ -152,312 +141,382 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a passionate software developer with a strong foundation in Java, Full-stack development and
-                        artificial intelligence. Currently pursuing my Bachelor's degree
-                        in Information Technology, I have hands-on experience building scalable web applications, robust
-                        REST APIs using Java and Spring Boot, and AI-driven solutions.
+                        I am a <strong>Full Stack Developer</strong> with experience in Java, Spring Boot, and the MERN stack, along with hands-on exposure to LLM training, prompt engineering, and AI model evaluation. I am highly skilled in building robust REST APIs, optimizing databases, and improving AI model responses through prompt engineering and structured feedback.
                     </p>
                     <p>
-                        My journey in technology has led me to work on impactful projects such as ClimaCast - A Smart
-                        Weather Application and CrisisConnect - a Community Disaster Management Web App, where I focused
-                        on real-time data processing, user-centric design, and efficient backend architecture. I’m
-                        always eager to learn new technologies, optimize backend performance using Java, and solve
-                        complex problems through clean, efficient code.
+                        My journey in technology has led me to work as a developer intern, where I solved complex algorithms and managed full-stack applications. I maintain a deep commitment to writing clean, modular code and refining backend efficiency to deliver seamless user experiences.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
+    <!-- Core Specializations ("What do I help?") Section -->
+    <section id="specializations" class="services">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <div class="services-grid">
+                
+                <!-- Left Column: Specialty Cards Stack -->
+                <div class="services-stack">
+                    <div class="service-card">
+                        <div class="service-icon-box icon-green">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="service-details">
+                            <h4>Backend & Systems Architecture</h4>
+                            <span>Java, Spring Boot, JSP, Servlets, MVC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon-box icon-yellow">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="service-details">
+                            <h4>Full-Stack Web Development</h4>
+                            <span>React, Node.js, Express.js, JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon-box icon-orange">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="service-details">
+                            <h4>AI & Database Engineering</h4>
+                            <span>MySQL, MongoDB, LLMs, Vertex AI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Description & stats -->
+                <div class="services-info">
+                    <h2 class="services-title">What do I help?</h2>
+                    <p class="services-description">
+                        I specialize in architecting scalable backend systems, designing intuitive full-stack user experiences, and optimizing database performance. By aligning strong Java problem-solving patterns with robust web frameworks and AI prompt engineering workflows, I build applications that solve complex user demands under optimal execution times.
+                    </p>
+                    
+                    <div class="services-stats">
+                        <div class="stat-item">
+                            <span class="stat-val">25+</span>
+                            <span class="stat-lbl">Project Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">1000+</span>
+                            <span class="stat-lbl">Algorithmic Solves</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Vertical Timeline Section -->
+    <section id="timeline" class="education-section">
+        <div class="container">
+            <h2 class="section-title">My Journey</h2>
+            
             <div class="education-timeline">
+                
+                <!-- Item 1: LLM Intern at Ethara AI -->
                 <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                    <div class="education-meta">
+                        <span class="education-school">Ethara AI</span>
+                        <span class="education-date">March 2026 - May 2026</span>
                     </div>
-                    <div class="education-content">
-                        <div class="education-header">
-                            <h4>Bachelor of Technology in Information Technology</h4>
-                            <span class="education-date">Aug 2022 - Present</span>
+                    <div class="education-node">
+                        <span class="node-dot"></span>
+                    </div>
+                    <div class="education-body">
+                        <h4>LLM Intern</h4>
+                        <div class="education-location">
+                            <i class="fas fa-map-marker-alt"></i> Gurugram, India
                         </div>
-                        <p class="education-school">Noida Institute of Engineering and Technology</p>
-                        <p class="education-location"><i class="fas fa-map-marker-alt"></i> Greater Noida, UP</p>
+                        <p>
+                            Evaluated and improved LLM responses across 500+ samples to improve response quality and alignment. Ranked and refined model responses using annotation tools based on predefined guidelines, identified inconsistencies through structured feedback, and applied prompt engineering to enhance context accuracy.
+                        </p>
                     </div>
                 </div>
+                
+                <!-- Item 2: Java Intern at CodSoft -->
                 <div class="education-item">
-                    <div class="education-icon">
-                        <i class="fas fa-school"></i>
+                    <div class="education-meta">
+                        <span class="education-school">CodSoft</span>
+                        <span class="education-date">Nov 2025 - Dec 2025</span>
                     </div>
-                    <div class="education-content">
-                        <div class="education-header">
-                            <h4>Secondary and Higher Secondary Education, CBSE Board</h4>
-                            <span class="education-date">May 2019 - May 2021</span>
+                    <div class="education-node">
+                        <span class="node-dot"></span>
+                    </div>
+                    <div class="education-body">
+                        <h4>Java Developer Intern</h4>
+                        <div class="education-location">
+                            <i class="fas fa-map-marker-alt"></i> Remote, India
                         </div>
-                        <p class="education-school">Jai Narayan Vidya Mandir Inter College</p>
-                        <p class="education-location"><i class="fas fa-map-marker-alt"></i> Kanpur, UP</p>
+                        <p>
+                            Developed backend services using Java and Spring Boot, implementing RESTful APIs for web applications. Optimized MySQL database queries and designed efficient schemas for improved performance, integrated responsive frontend components, and collaborated inside Agile methodologies.
+                        </p>
                     </div>
                 </div>
+                
+                <!-- Item 3: B.Tech NIET -->
+                <div class="education-item">
+                    <div class="education-meta">
+                        <span class="education-school">NIET</span>
+                        <span class="education-date">Nov 2022 - May 2026</span>
+                    </div>
+                    <div class="education-node">
+                        <span class="node-dot"></span>
+                    </div>
+                    <div class="education-body">
+                        <h4>Bachelor of Technology in Information Technology</h4>
+                        <div class="education-location">
+                            <i class="fas fa-map-marker-alt"></i> Noida Institute of Engineering & Technology, Greater Noida, India
+                        </div>
+                        <p>
+                            Forming solid engineering competencies in data structures & algorithms, OOPs, database management, and full-stack software development. Secured a CGPA of <strong>7.54 / 10</strong>.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Item 4: Leadership & Projects -->
+                <div class="education-item">
+                    <div class="education-meta">
+                        <span class="education-school">Capstone Lead</span>
+                        <span class="education-date">Academic Year</span>
+                    </div>
+                    <div class="education-node">
+                        <span class="node-dot"></span>
+                    </div>
+                    <div class="education-body">
+                        <h4>Led Capstone Project Team</h4>
+                        <div class="education-location">
+                            <i class="fas fa-certificate"></i> NIET B.Tech IT Final Year Project
+                        </div>
+                        <p>
+                            Guided a final-year developer team in planning, architectural design, implementation, and successful delivery of our core engineering capstone project.
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">Python</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">MySQL</span>
-                        <span class="skill-item">MongoDB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">HTML</span>
-                        <span class="skill-item">CSS</span>
-                        <span class="skill-item">JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Express</span>
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">FastAPI</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Developer Tools</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Google Cloud Platform</span>
-                        <span class="skill-item">VS Code</span>
-                        <span class="skill-item">Visual Studio</span>
-                        <span class="skill-item">Jupyter</span>
-                        <span class="skill-item">IntelliJ</span>
-                        <span class="skill-item">Eclipse</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="soft-skills">
-                <h3>Soft Skills</h3>
-                <div class="soft-skill-items">
-                    <div class="soft-skill-item">
-                        <i class="fas fa-comments"></i>
-                        <span>Good Communication</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Problem Solving & Critical Thinking</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Adaptability & Time Management</span>
-                    </div>
-                    <div class="soft-skill-item">
-                        <i class="fas fa-handshake"></i>
-                        <span>Work Ethic</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
+    <!-- Featured Projects Grid Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">My Latest Works</h2>
+            
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>CrisisConnect - Connect. Respond. Save.</h3>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">JWT (JSON Web Tokens)</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Express.JS</span>
-                            <span class="tech-tag">Node.JS</span>
+                
+                <!-- Card 1: TaskFlow -->
+                <div class="project-card card-taskflow">
+                    <div class="project-inner-card">
+                        <div class="project-header">
+                            <h3>
+                                <a href="https://team-task-manager-devprashant.up.railway.app/" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                                    TaskFlow - Team Collaboration & Task Management Platform <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">React.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-content">
-                        <ul class="project-features">
-                            <li>Built a crisis response portal to connect volunteers and affected individuals.</li>
-                            <li>Integrated Map API for location-based crisis tracking and nearby resource discovery.
-                            </li>
-                            <li>Built CRUD operations for crisis posts, allowing users to create, update, and close
-                                incidents.</li>
-                            <li>Integrated search and filter functionalities for locating nearby help and resources
-                                quickly.</li>
-                        </ul>
+                        <div class="project-content">
+                            <ul class="project-features">
+                                <li>Developed a full-stack team productivity platform with premium SPA design, glassmorphism UI, and real-time notifications.</li>
+                                <li>Architected multi-tiered Role-Based Access Control (RBAC) security system using JWT and custom middleware.</li>
+                                <li>Engineered real-time task commentary and an interactive 42-day calendar with priority-coded colors.</li>
+                                <li>Optimized analytics to &lt;50ms using MongoDB aggregation pipelines; secured APIs with rate-limiting.</li>
+                            </ul>
+                            <div class="project-footer">
+                                <a href="https://github.com/prashantpurwar12/TaskFlow" target="_blank" rel="noopener noreferrer" class="project-git-link">
+                                    <i class="fab fa-github"></i> Codebase
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>ClimaCast - A Smart Weather Companion</h3>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API Integration</span>
+                <!-- Card 2: CrisisConnect -->
+                <div class="project-card card-crisisconnect">
+                    <div class="project-inner-card">
+                        <div class="project-header">
+                            <h3>
+                                <a href="https://crisis-connect-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                                    CrisisConnect - Connect. Respond. Save. <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express.JS</span>
+                                <span class="tech-tag">Node.JS</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <ul class="project-features">
+                                <li>Developed a full-stack platform for crisis reporting and volunteer coordination.</li>
+                                <li>Designed REST APIs and implemented modular backend business logic.</li>
+                                <li>Focused on system usability, structured data handling, and response efficiency.</li>
+                                <li>Optimized requests handling to support real-time reporting and faster updates.</li>
+                            </ul>
+                            <div class="project-footer">
+                                <a href="https://github.com/prashantpurwar12" target="_blank" rel="noopener noreferrer" class="project-git-link">
+                                    <i class="fab fa-github"></i> Codebase
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-content">
-                        <ul class="project-features">
-                            <li>Built a weather application providing real-time forecasts and location-based updates.
-                            </li>
-                            <li>Integrated Weather API for current conditions, temperature, and forecasts.</li>
-                            <li>Designed a responsive UI with search and filter options for city-specific weather.</li>
-                            <li>Added smart suggestions for travel and outdoor activities based on weather data.</li>
-                        </ul>
+                </div>
+
+                <!-- Card 3: StudDesk -->
+                <div class="project-card card-studdesk">
+                    <div class="project-inner-card">
+                        <div class="project-header">
+                            <h3>
+                                <a href="https://github.com/prashantpurwar12" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                                    StudDesk - Student Management System <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Servlets</span>
+                                <span class="tech-tag">JSP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">MVC</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <ul class="project-features">
+                                <li>Engineered secure student records backend using Java Servlets, JSP, and JDBC inside MVC architecture.</li>
+                                <li>Implemented secure user logins, CRUD operations, and thorough frontend input validations.</li>
+                                <li>Hardened system reliability through modular OOP design patterns, structured data flow, and thorough debugging.</li>
+                                <li>Built modules for student registrations, database schema bindings, and secure record management.</li>
+                            </ul>
+                            <div class="project-footer">
+                                <a href="https://github.com/prashantpurwar12" target="_blank" rel="noopener noreferrer" class="project-git-link">
+                                    <i class="fab fa-github"></i> Codebase
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
-
-    <!-- Certifications Section -->
+    <!-- Certifications List Section -->
     <section id="certifications" class="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications</h2>
+            <h2 class="section-title">Certifications & Achievements</h2>
             <div class="certifications-grid">
+                
+                <div class="cert-item">
+                    <i class="fas fa-brain"></i>
+                    <div class="cert-content">
+                        <h4>Prompt Design in Vertex AI</h4>
+                        <p>Google Cloud Skill Badge</p>
+                    </div>
+                </div>
+                
                 <div class="cert-item">
                     <i class="fas fa-certificate"></i>
                     <div class="cert-content">
-                        <h4>Introduction to Artificial Intelligence (AI)</h4>
-                        <p>Coursera (offered by IBM)</p>
+                        <h4>NCET Plus MERN Full Stack Developer</h4>
+                        <p>Scored 82.93% (Grade O - Outstanding)</p>
                     </div>
                 </div>
+                
                 <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
+                    <i class="fas fa-chart-line"></i>
                     <div class="cert-content">
-                        <h4>Python Basics</h4>
-                        <p>Coursera (offered by University of Michigan)</p>
+                        <h4>Deloitte Australia Data Analytics</h4>
+                        <p>Job Simulation on Forage</p>
                     </div>
                 </div>
+                
                 <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
+                    <i class="fab fa-java"></i>
                     <div class="cert-content">
                         <h4>Java Programming Fundamentals</h4>
                         <p>Infosys Springboard</p>
                     </div>
                 </div>
+                
                 <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
+                    <i class="fas fa-database"></i>
                     <div class="cert-content">
-                        <h4>Object Oriented Programming in Java</h4>
-                        <p>Coursera (offered by University of SanDiego)</p>
-                    </div>
-                </div>
-                <div class="cert-item">
-                    <i class="fas fa-certificate"></i>
-                    <div class="cert-content">
-                        <h4>Database Management System - Science Graduates</h4>
+                        <h4>Database Management System</h4>
                         <p>Infosys Springboard</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements</h2>
-            <div class="achievement-item">
-                <div class="achievement-header">
-                    <h3>NCET PLUS Fullstack Developer (MERN) Certification</h3>
-                    <span class="achievement-date">November 2025</span>
-                </div>
-                <ul class="achievement-details">
-                    <li>Secured <strong>82.93%</strong> in the National Competence & Employability Test (NCET)</li>
-                    <li>Achieved <strong>Grade 'O' (Outstanding)</strong> in Fullstack Development</li>
-                    <li>Demonstrated proficiency in MERN stack and employability skills</li>
-                </ul>
-            </div>
-            <div class="achievement-item">
-                <div class="achievement-header">
-                    <h3>Deloitte Australia Data Analytics Job Simulation on Forage</h3>
-                    <span class="achievement-date">July 2024</span>
-                </div>
-                <ul class="achievement-details">
-                    <li>Completed a Deloitte job simulation involving data analysis and forensic technology</li>
-                    <li>Created a data dashboard using Tableau</li>
-                    <li>Used Excel to classify data and draw business conclusions</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- Typographic Footer Split Grid -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p class="contact-description">
-                        I'm always open to discussing new opportunities, interesting projects, or just having a chat
-                        about technology.
-                        Feel free to reach out!
-                    </p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:work.prashantpurwar@gmail.com">work.prashantpurwar@gmail.com</a>
-                            </div>
+            <div class="contact-grid">
+                
+                <!-- Left Column: Cta Headings -->
+                <div class="contact-left-col">
+                    <h2 class="contact-cta">
+                        <span>Let's make something</span>
+                        <span>amazing together.</span>
+                    </h2>
+                    
+                    <a href="mailto:work.prashantpurwar@gmail.com" class="contact-sayhi">
+                        Start by <span class="highlight-hi">saying hi <i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+                
+                <!-- Right Column: Navigation and Credentials stacked next to each other -->
+                <div class="contact-right-col">
+                    
+                    <div class="contact-info-block">
+                        <div class="contact-item-minimal">
+                            <h4>Location</h4>
+                            <p>Delhi, India</p>
                         </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <a href="tel:+919838411500">+91 9838411500</a>
-                            </div>
+                        <div class="contact-item-minimal">
+                            <h4>Email</h4>
+                            <a href="mailto:work.prashantpurwar@gmail.com">work.prashantpurwar@gmail.com</a>
                         </div>
-                        <div class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/prashant-purwar-230966264/"
-                                    target="_blank">linkedin.com/in/prashant-purwar-23006264</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <a href="https://github.com/prashantpurwar12"
-                                    target="_blank">github.com/prashantpurwar12</a>
-                            </div>
+                        <div class="contact-item-minimal">
+                            <h4>Phone</h4>
+                            <a href="tel:+919838411500">+91 98384 11500</a>
                         </div>
                     </div>
+                    
+                    <div class="contact-menu-block">
+                        <h4>Menu</h4>
+                        <ul class="contact-menu-list">
+                            <li><a href="#about" class="contact-menu-link">About</a></li>
+                            <li><a href="#specializations" class="contact-menu-link">Works</a></li>
+                            <li><a href="#timeline" class="contact-menu-link">Journey</a></li>
+                            <li><a href="#contact" class="contact-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
+                
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Copyright -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Prashant Purwar. All rights reserved.</p>
+                <p>&copy; 2026 Prashant Purwar. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#home">Back to Top</a>
                 </div>
